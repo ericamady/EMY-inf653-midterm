@@ -2,7 +2,7 @@
 class Database{
     // DB params
     private $host = 'localhost';
-    private $port = '5432';
+    //private $port = '5432';
     private $db_name = 'postgres';
     private $username = 'postgres';
     private $password = 'postgres';
@@ -11,7 +11,7 @@ class Database{
     // DB Connect
     public function connect(){
         $this->conn = null;
-        $dsn = "pgsql:host={$this->host}; port={$this->port}; dbname={$this->db_name}"; 
+        $dsn = "pgsql:host={$this->host}; dbname={$this->db_name}"; 
           
 
         try{
