@@ -3,7 +3,6 @@ class Database{
     // DB params
     private $conn;
     private $host;
-    //private $port;
     private $dbname;
     private $username;
     private $password;
@@ -14,7 +13,7 @@ $this->username = getenv('USERNAME');
 $this->password = getenv('PASSWORD');
 $this->dbname = getenv('DBNAME');
 $this->host = getenv('HOST');
-$this->port = getenv('PORT');
+
 
 
 }
