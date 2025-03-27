@@ -23,7 +23,7 @@ if(isset($_GET['author_id'])){
     
  }
  else{
-    $quotes->author_id = null;
+    $quotes->author_id = '';
  }
  if(isset($_GET['category_id'])){
     $category_id = $_GET['category_id'];
@@ -31,7 +31,7 @@ if(isset($_GET['author_id'])){
   
  }
  else{
-    $quotes->category_id = null;
+    $quotes->category_id = '';
  }
 
 //Quotes query
