@@ -54,6 +54,7 @@ $stmt = $this->conn->prepare($query);
 
 $this->author_id = htmlspecialchars(strip_tags($this->author_id));
 $this->category_id = htmlspecialchars(strip_tags($this->category_id));
+$this->quote = htmlspecialchars(strip_tags($this->quote));
 
 //Bind Id
 
