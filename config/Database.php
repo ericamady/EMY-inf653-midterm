@@ -3,7 +3,7 @@ class Database{
     // DB params
     private $conn;
     private $host;
-    private $port;
+    //private $port;
     private $dbname;
     private $username;
     private $password;
@@ -27,7 +27,7 @@ $this->port = getenv('PORT');
         return $this->conn;
        }else{
 
-        $dsn = "pgsql:host={$this->host}; port={$this->port}; dbname={$this->dbname};";
+        $dsn = "pgsql:host={$this->host}; dbname={$this->dbname};";
 
         try{
             $this->conn = new PDO($dsn, $this->username, $this->password);
